@@ -13,6 +13,7 @@
 		B97D1B3A27B9E2E600DEB6BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B97D1B3827B9E2E600DEB6BC /* Main.storyboard */; };
 		B97D1B3C27B9E2E800DEB6BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B97D1B3B27B9E2E800DEB6BC /* Assets.xcassets */; };
 		B97D1B3F27B9E2E800DEB6BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B97D1B3D27B9E2E800DEB6BC /* LaunchScreen.storyboard */; };
+		B97D1B4727B9E64C00DEB6BC /* SelectPrefectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1B4627B9E64C00DEB6BC /* SelectPrefectureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B97D1B3B27B9E2E800DEB6BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B97D1B3E27B9E2E800DEB6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B97D1B4027B9E2E800DEB6BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B97D1B4627B9E64C00DEB6BC /* SelectPrefectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPrefectureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				B97D1B3227B9E2E600DEB6BC /* AppDelegate.swift */,
 				B97D1B3427B9E2E600DEB6BC /* SceneDelegate.swift */,
+				B97D1B4627B9E64C00DEB6BC /* SelectPrefectureViewController.swift */,
 				B97D1B3627B9E2E600DEB6BC /* ViewController.swift */,
 				B97D1B3827B9E2E600DEB6BC /* Main.storyboard */,
 				B97D1B3B27B9E2E800DEB6BC /* Assets.xcassets */,
@@ -77,6 +80,7 @@
 				B97D1B2B27B9E2E600DEB6BC /* Sources */,
 				B97D1B2C27B9E2E600DEB6BC /* Frameworks */,
 				B97D1B2D27B9E2E600DEB6BC /* Resources */,
+				B97D1B4827B9F39500DEB6BC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,6 +137,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B97D1B4827B9F39500DEB6BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B97D1B2B27B9E2E600DEB6BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +165,7 @@
 				B97D1B3727B9E2E600DEB6BC /* ViewController.swift in Sources */,
 				B97D1B3327B9E2E600DEB6BC /* AppDelegate.swift in Sources */,
 				B97D1B3527B9E2E600DEB6BC /* SceneDelegate.swift in Sources */,
+				B97D1B4727B9E64C00DEB6BC /* SelectPrefectureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

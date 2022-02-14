@@ -9,11 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet private weak var prefectureTextLabel: UILabel!
+
+    private var appDelegate: AppDelegate {
+        (UIApplication.shared.delegate as? AppDelegate)!
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        prefectureTextLabel.text = appDelegate.prefectureString
+    }
 
 }
-
